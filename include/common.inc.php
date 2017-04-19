@@ -25,7 +25,7 @@ function getAndJudge($val, $str){
  * @param $val
  * @param $str
  */
-function getAndJudge($val, $str){
+function getAndJudge2($val, $str){
     if (empty($_POST[$val])){
         echo "<script type='text/javascript'>alert('$str');</script>";
         exit();
