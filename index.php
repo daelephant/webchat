@@ -9,7 +9,7 @@
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript">
         $(function(){
-            $("#flist li").hover(function(){ $(this).css("color","blue").css("cursor","pointer");$(this).siblings().css("color","#000")},function(){$(this).css("color","#000")}).click(function(){window.open("message.php?geter="+$(this).attr("title"),"webchat","width=300,height=600");});
+            $("#flist li").hover(function(){ $(this).css("color","red").css("cursor","pointer");$(this).siblings().css("color","#000")},function(){$(this).css("color","#000")}).click(function(){window.open("message.php?geter="+$(this).attr("title"),"webchat","width=300,height=600");});
         });
     </script>
 </head>
@@ -65,7 +65,7 @@ mysql_free_result($res);
             }else{
             echo "</li></td>";
             }
-            echo "<td>&nbsp;&nbsp;<a href='delfriend.php?f_nickname=".$f_nickname."' onclick='return del_confirm()'>删除</a></td>";
+            echo "<td>&nbsp;&nbsp;<a href='delfriend.php?f_nickname=".$f_nickname."' onclick='return confirm()'>删除</a></td>";
             echo "</tr>";
         }
         mysql_free_result($res);
