@@ -20,7 +20,7 @@
 	include "include/dbconn.php";
 
 	if(empty($_SESSION['password'])){
-		header("Location:login.php");
+		header("Location:login.html");
 		exit();
 	}else{
 		$nickname = $_SESSION['nickname'];

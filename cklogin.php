@@ -29,10 +29,10 @@ if (!$res) {
     //echo "success";exit;
     exit();
 }else{
-    echo "<script> alert('success!go to index!');</script>";
+    echo "<script> alert('success!go to index1!');</script>";
 
     $_SESSION['nickname'] = $nickname;
-    $_SESSION['$password'] = $password;
+    $_SESSION['password'] = $password;
     echo "<script>location.href='index.php';</script>";
     //header("Location:index.php");
     //!!!用header奇怪的现象：跳过alert直接跳转；所以不推荐header跳转；
