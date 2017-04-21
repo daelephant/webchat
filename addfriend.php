@@ -13,7 +13,7 @@
     $sql = "select nickname from user order by reg_time DESC limit 0,10;";
     $res = mysql_query($sql,$link);
     while ($row = mysql_fetch_array($res)) {
-        echo "<li>".$row['nickname']."&nbsp;|&nbsp;<a href='addfriend1.php?f_mickname=".$row['nickname']."'>添加好友</a></li> ";
+        echo "<li>".$row['nickname']."&nbsp;|&nbsp;<a href='addfriend1.php?f_nickname=".$row['nickname']."'>添加好友</a></li> ";
     }
     mysql_free_result($res);
 
